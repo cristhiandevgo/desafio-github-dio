@@ -3,5 +3,5 @@
 
 ### Captura de Tela
 <p align="center">
-  <img src="https://github.com/cristhiandevgo/desafio-github-dio/blob/master/tela.jpg" alt=""/>
+  <img src="https://raw.githubusercontent.com/cristhiandevgo/desafio-github-dio/main/tela.jpg" alt=""/>
 </p>
