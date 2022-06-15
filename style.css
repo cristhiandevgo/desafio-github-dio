@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    line-height: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    flex: 1;
+}
+
+.nav{
+    flex: 1;
+    display: flex;
+    background-color: #212121;
+    color: white;
+    height: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.nav-itens{
+    flex: 1;
+}
+
+.title-big{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+}
+.title-small{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.content{
+    flex: 0.1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.itens{
+    width: 70vw;
+    margin: 0 auto;
+}
+.itens p{
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+
+.footer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer-content{
+    flex: 1;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .itens{
+        width: 100vw;
+        margin: 0 auto;
+    }
+}
