@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fundamentos - justify-content</title>
+	<style>
+		.container{
+			max-width: 400px;
+			border: 1px solid black;
+			margin: 0;
+			display: flex;
+		}
+
+		.item{
+			background-color: blueviolet;
+			margin: 5px;
+			text-align: center;
+			color: white;
+		}
+
+		.flex-start{
+			justify-content: flex-start;
+		}
+
+		.flex-end{
+			justify-content: flex-end;
+		}
+
+		.center{
+			justify-content: center;
+		}
+
+		.space-between{
+			justify-content: space-between;
+		}
+
+		.space-around{
+			justify-content: space-around;
+		}
+
+		.column{
+			flex-direction: column;
+			min-height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<h1>row</h1>
+	<h1>flex-start</h1>
+	<section class="container flex-start">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+	<h1>flex-end</h1>
+	<section class="container flex-end">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+	<h1>center</h1>
+	<section class="container center">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+	<h1>space-between</h1>
+	<section class="container space-between">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+	<h1>space-around</h1>
+	<section class="container space-around">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+
+	<!-- column -->
+	<h1>column</h1>
+
+	<h1>flex-start column</h1>
+	<section class="container flex-start column">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+	<h1>flex-end column</h1>
+	<section class="container flex-end column">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+	<h1>center column</h1>
+	<section class="container center column">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+	<h1>space-between column</h1>
+	<section class="container space-between column">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+	<h1>space-around column</h1>
+	<section class="container space-around column">
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+		<div class="item">Texto</div>
+	</section>
+
+</body>
+</html>
