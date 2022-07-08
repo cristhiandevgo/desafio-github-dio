@@ -24,6 +24,7 @@ div img{ /* responsividade */
 	max-width: 1000px;
 	margin: 0 auto;
 	width: 100%;
+	min-width: 320px;
 }
 
 header{
@@ -51,13 +52,14 @@ header .menu{
 }
 
 .apresentacao{
-	height: 100vh;
 	align-items: center;
 	justify-content: space-between;
+	padding: 5rem 0;
 }
 
 .apresentacao .texto-apresentacao{
 	min-height: 200px;
+	padding: 5rem 0;
 }
 
 .texto-apresentacao h1{
@@ -77,6 +79,7 @@ header .menu{
 	margin: 10px 0 10px 0;
 	display: block;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #quem-somos{
@@ -85,11 +88,16 @@ header .menu{
 	justify-content: space-between;
 }
 
+#quem-somos img{
+	min-width: 320px;
+	margin: auto;
+}
+
 #quem-somos h2{
 	font-size: 32px;
 	color: #122A57;
 	display: flex;
-	margin-bottom: 20px;
+	padding: 5rem 0;
 }
 
 #quem-somos h2::before{ /* pseudoelemento */
@@ -168,6 +176,11 @@ header .menu{
 #planos{
 	flex-direction: column;
 	min-height: 100vh;
+	padding-top: 50px;
+}
+
+#planos h2{
+	font-size: 32px;
 }
 
 .list-planos{
@@ -210,6 +223,7 @@ header .menu{
 	padding: 10px 20px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10px;
 }
 
 .item-plano ul li{
@@ -224,4 +238,101 @@ header .menu{
 	height: 10px;
 	background-color: #122A57;
 	margin-right: 5px;
+}
+
+footer{
+	background-color: #122A57;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+}
+
+footer .footer{
+	justify-content: space-between;
+	color: white;
+}
+
+.footer p a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+	.flex-container{
+		flex-direction: column;
+	}
+
+	.menu{
+		padding: 3rem 0;
+	}
+
+	.apresentacao{
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+
+	.apresentacao .texto-apresentacao{
+		padding: 0;
+	}
+
+	#quem-somos{
+		flex-direction: column-reverse;
+		max-width: 90%;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#quem-somos h2{
+		padding: 1rem 0;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+
+	#quem-somos p{
+		margin-bottom: 0;
+		width: 100%;
+		text-align: justify;
+		padding: 1rem 0;
+	}
+
+	.list-servicos{
+		flex-direction: column;
+	}
+
+	.item-servico img{
+		width: 50%;
+		margin: auto;
+	}
+
+	.list-planos{
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 20px;
+	}
+
+	.list-planos .item-plano{
+		margin: auto;
+		width: 100%;
+		max-width: 90%;
+		margin-bottom: 20px;
+	}
+
+	.padding-mobile{
+		padding-left: 1rem;
+	}
+
+	.title{
+		padding: 1rem 0;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.footer{
+		flex-direction: row;
+	}
 }
